@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="././assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="app">
+    <section class="calculator">
+      <div>
+        <span>CALC</span>
+        <input type = "checkbox">
+      </div>
+      <div id="display" ></div>
+      <div class="buttons">
+        <button data-number class="num">7</button>
+        <button data-number class="num">8</button>
+        <button data-number class="num">9</button>
+        <button data-delete class="num btndif">DEL</button>
+        <button data-number class="num num">4</button>
+        <button data-number class="num num">5</button>
+        <button data-number class="num">6</button>
+        <button data-operation class="num operator">+</button>
+        <button data-number class="num">1</button>
+        <button data-number class="num">2</button>
+        <button data-number class="num">3</button>
+        <button data-operation class="num operator">-</button>
+        <button data-number class="num operator">.</button>
+        <button data-number class="num">0</button>
+        <button data-operation class="num operator">/</button>
+        <button data-operation class="num operator">*</button>
+        <button data-all-clear class="span-two num btndif">RESET</button>
+        <button data-equels class="span-two num equels">=</button>
+      </div>
+    </section>
+  </body>
 </html>

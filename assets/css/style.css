@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+:root {
+  /*Theme 1*/
+  /*Backgrounds*/
+  --bg-body: hsl(222, 26%, 31%);
+  --bg-keypad: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  /*Keys*/
+  --bg-delete: hsl(225, 21%, 49%);
+  --shadow-delete: hsl(224, 28%, 35%);
+
+  --toggle-key: hsl(6, 63%, 50%);
+  --shadow-equals: hsl(6, 70%, 34%);
+
+  --bg-key: hsl(30, 25%, 89%);
+  --shadow-key: hsl(28, 16%, 65%);
+
+  /*Text*/
+  --color-number: hsl(221, 14%, 31%);
+  --color-result: rgb(255, 255, 255);
+
+  /*Theme2*/
+
+  /*Backgrounds*/
+  --bg-body2: hsl(0, 0%, 90%);
+  --bg-keypad2: hsl(0, 5%, 81%);
+  --bg-screen2: hsl(0, 0%, 93%);
+
+  /*Keys*/
+  --bg-delete2: hsl(185, 42%, 37%);
+  --shadow-delete2: hsl(185, 58%, 25%);
+
+  --toggle-key2: hsl(25, 98%, 40%);
+  --shadow-equals2: hsl(25, 99%, 27%);
+
+  --bg-key2: hsl(45, 7%, 89%);
+  --shadow-key2: hsl(35, 11%, 61%);
+
+  /*Text*/
+  --color-number2: hsl(60, 10%, 19%);
+  --color-result2: hsl(0, 0, 100%);
+
+  /*Theme 3*/
+
+  /*Backgrounds*/
+  --bg-body2: hsl(268, 75%, 9%);
+  --bg-keypad2: hsl(268, 71%, 12%);
+
+  /*Keys*/
+  --bg-delete2: hsl(281, 89%, 26%);
+  --shadow-delete2: hsl(285, 91%, 52%);
+
+  --toggle-key2: hsl(176, 100%, 44%);
+  --shadow-equals2: hsl(177, 92%, 70%);
+
+  --bg-key2: hsl(268, 47%, 21%);
+  --shadow-key2: hsl(290, 70%, 36%);
+
+  /*Text*/
+  --color-number2: hsl(52, 100%, 62%);
+  --color-result2: hsl(198, 20%, 13%);
+  --color-text: hsl(0, 0, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-weight: normal;
+}
+
+.app {
+  align-items: center;
+  background: var(--bg-body);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.calculator {
+  width: 38%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  align-items: center;
+  background-color: var(--bg-keypad);
+  border-radius: 10px;
+  column-gap: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 490px;
+  margin: 20px auto auto auto;
+  position: relative;
+  padding: 30px 30px;
+  top: 15px;
+}
+
+.num {
+  background-color: var(--bg-key);
+  border: 0 none;
+  border-radius: 10px;
+  box-shadow: 0px 5px var(--shadow-key);
+  color: var(--color-number);
+  cursor: pointer;
+  font-size: 2rem;
+  height: 60px;
+  outline: none;
+  width: 100px;
+}
+
+.num:hover{
+  transform:translateZ(-20px)
+}
+
+.operator {
+  background-color: var(--bg-key);
+}
+
+.equels {
+  background-color: var(--toggle-key);
+}
+
+
+.span-two {
+  box-shadow: 0px 5px var(--shadow-equals);
+  color: var(--color-result);
+  font-size: 22px;
+  width: 230px;
+}
+
+.btndif {
+  box-shadow: 0px 5px var(--shadow-delete);
+  color: var(--color-result);
+  font-size: 22px;
+  background-color: var(--bg-delete);
+}
+
+#display {
+  align-items: flex-end;
+  background-color: var(--bg-screen);
+  border: 0 none;
+  border-radius: 10px;
+  color: var(--color-result);
+  display: flex;
+  flex-direction: column;
+  font-family: "Spartan", sans-serif;
+  font-size: 3rem;
+  grid-column: 1 / -1;
+  height: 130px;
+  justify-content: space-around;
+  padding: 35px;
+  position: relative;
+  top: 15px;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
