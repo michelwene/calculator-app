@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" theme1">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,21 @@
   </head>
   <body class="app">
     <section class="calculator">
-      <div>
-        <span>CALC</span>
-        <input type = "checkbox">
-      </div>
+        <nav>
+          <h1 class="branding">calc</h1>
+          <div id="themSwitcher" class="switcher">
+            <h2>
+              theme
+            </h2>
+            <div>
+              <span> 1 2 3</span>
+              <div class="buttonWrapper">
+                <input type='radio' name="them" id="them-1" class="them" value="them-1" />
+                <input type='radio' name="them" id="them-2" class="them" value="them-2" />
+                <input type='radio' name="them" id="them-3" class="them" value="them-3" />
+              </div>
+            </div>
+        </nav>
       <div id="display" ></div>
       <div class="buttons">
         <button data-number class="num">7</button>

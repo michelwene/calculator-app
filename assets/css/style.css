@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
-:root {
+:root.them-1 {
   /*Theme 1*/
   /*Backgrounds*/
   --bg-body: hsl(222, 26%, 31%);
@@ -19,48 +19,57 @@
   /*Text*/
   --color-number: hsl(221, 14%, 31%);
   --color-result: rgb(255, 255, 255);
+  --key-del: rgb(255, 255, 255);
+  --key-equels: rgb(255, 255, 255);
+}
 
+:root.them-2 {
   /*Theme2*/
 
   /*Backgrounds*/
-  --bg-body2: hsl(0, 0%, 90%);
-  --bg-keypad2: hsl(0, 5%, 81%);
-  --bg-screen2: hsl(0, 0%, 93%);
+  --bg-body: hsl(0, 0%, 90%);
+  --bg-keypad: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
 
   /*Keys*/
-  --bg-delete2: hsl(185, 42%, 37%);
-  --shadow-delete2: hsl(185, 58%, 25%);
+  --bg-delete: hsl(185, 42%, 37%);
+  --shadow-delete: hsl(185, 58%, 25%);
 
-  --toggle-key2: hsl(25, 98%, 40%);
-  --shadow-equals2: hsl(25, 99%, 27%);
+  --toggle-key: hsl(25, 98%, 40%);
+  --shadow-equals: hsl(25, 99%, 27%);
 
-  --bg-key2: hsl(45, 7%, 89%);
-  --shadow-key2: hsl(35, 11%, 61%);
+  --bg-key: hsl(45, 7%, 89%);
+  --shadow-key: hsl(35, 11%, 61%);
 
   /*Text*/
-  --color-number2: hsl(60, 10%, 19%);
-  --color-result2: hsl(0, 0, 100%);
+  --color-number: hsl(60, 10%, 19%);
+  --color-result: hsl(0, 0, 100%);
+  --key-del: rgb(255, 255, 255);
+  --key-equels: rgb(255, 255, 255);
+}
 
+:root.them-3 {
   /*Theme 3*/
 
   /*Backgrounds*/
-  --bg-body2: hsl(268, 75%, 9%);
-  --bg-keypad2: hsl(268, 71%, 12%);
+  --bg-body: hsl(268, 75%, 9%);
+  --bg-keypad: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
 
   /*Keys*/
-  --bg-delete2: hsl(281, 89%, 26%);
-  --shadow-delete2: hsl(285, 91%, 52%);
+  --bg-delete: hsl(281, 89%, 26%);
+  --shadow-delete: hsl(285, 91%, 52%);
 
-  --toggle-key2: hsl(176, 100%, 44%);
-  --shadow-equals2: hsl(177, 92%, 70%);
+  --toggle-key: hsl(176, 100%, 44%);
+  --shadow-equals: hsl(177, 92%, 70%);
 
-  --bg-key2: hsl(268, 47%, 21%);
-  --shadow-key2: hsl(290, 70%, 36%);
+  --bg-key: hsl(268, 47%, 21%);
+  --shadow-key: hsl(290, 70%, 36%);
 
   /*Text*/
-  --color-number2: hsl(52, 100%, 62%);
-  --color-result2: hsl(198, 20%, 13%);
-  --color-text: hsl(0, 0, 100%);
+  --color-number: hsl(52, 100%, 62%);
+  --color-result: hsl(52, 100%, 62%);
+  --color-text: rgb(255, 255, 255);
 }
 
 *,
@@ -87,6 +96,89 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.calculator nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+.branding {
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+.switcher {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switcher span {
+  word-spacing: 13px;
+  text-align: center;
+  color: var(--color-result);
+  margin-left: 27px;
+}
+
+.buttonWrapper {
+  background-color: var(--bg-keypad);
+  padding: 5px 8px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: none;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+input[type="radio"]::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+  background: var(--toggle-key);
+}
+
+.calculator nav h2 {
+  color: var(--color-result);
+  font-family: "Spartan", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 1.5rem;
+}
+.theme {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.branding {
+  color: var(--color-result);
+  font-family: "Spartan", sans-serif;
+  font-size: 20px;
 }
 
 .buttons {
@@ -117,8 +209,9 @@
   width: 100px;
 }
 
-.num:hover{
-  transform:translateZ(-20px)
+.num:active {
+  box-shadow: 0px 0px var(--shadow-key), inset 0px 5px var(--shadow-key);
+  transform: translate(0px, 3px);
 }
 
 .operator {
@@ -129,12 +222,15 @@
   background-color: var(--toggle-key);
 }
 
-
 .span-two {
   box-shadow: 0px 5px var(--shadow-equals);
-  color: var(--color-result);
+  color: var(--key-equels);
   font-size: 22px;
   width: 230px;
+}
+
+.span-two:active {
+  box-shadow: 0px 0px var(--shadow-equals), inset 0px 5px var(--shadow-equals);
 }
 
 .btndif {
@@ -142,6 +238,10 @@
   color: var(--color-result);
   font-size: 22px;
   background-color: var(--bg-delete);
+}
+
+.btndif:active {
+  box-shadow: 0px 0px var(--shadow-delete), inset 0px 5px var(--shadow-delete);
 }
 
 #display {

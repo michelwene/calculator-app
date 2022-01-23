@@ -1,3 +1,4 @@
+/*Calculator*/
 let display = document.getElementById("display");
 
 let button = Array.from(document.querySelectorAll("button"));
@@ -34,3 +35,21 @@ button.map((button) => {
     }
   });
 });
+
+/* Switch Theme*/
+const themSwitcher = document.querySelectorAll(".them");
+const defaultThem = localStorage.getItem("them") || "them-1";
+
+setThem(defaultThem);
+themSwitcher.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    setThem(e.target.value);
+  });
+});
+
+function setThem(them) {
+  them = them || "them-1";
+  document.documentElement.className = them;
+  localStorage.setItem("them", them);
+  themSwitcher.value = them;
+}
