@@ -222,7 +222,7 @@ Pretendo continuar fazendo projetos do FrontendMentor, para melhorar meu HTML, C
 
 - [Stackoverflow](https://stackoverflow.com/) - Este site me ajudou muito na realização das funções do javascript.
 - [PerfectPixel](https://www.welldonecode.com/perfectpixel/) - Plugin do google Chrome utilizado para servir de refência na construção do layout, funciona mais ou menos como um FIGMA.
-- [DeveloperMozila](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - A documentação do Developer Mozilla é essencial para compreender as funções e conseguir aplicar as mesmas no projeto.
 
 ## Autor
 
