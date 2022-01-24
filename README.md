@@ -1,6 +1,6 @@
-# Frontend Mentor - Sunnyside-agency-landing-page
+# Frontend Mentor - Calculator app
 
-Esta é uma solução para o [calculator-app](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação ao construir projetos realistas.
+Esta é uma solução para o [calculator-app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação ao construir projetos realistas.
 
 ## Resumo de conteúdos
 
@@ -51,8 +51,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solução URL: [https://github.com/michelwene/sunnyside-agency-landing-page](https://github.com/michelwene/sunnyside-agency-landing-page)
-- Site URL: [https://michelwene.github.io/sunnyside-agency-landing-page/](https://michelwene.github.io/sunnyside-agency-landing-page/)
+- Solução URL: [https://github.com/michelwene/calculator-app](https://github.com/michelwene/calculator-app)
+- Site URL: [https://michelwene.github.io/calculator-app/](https://michelwene.github.io/calculator-app/)
 
 ## Meu processo
 
@@ -222,7 +222,7 @@ Pretendo continuar fazendo projetos do FrontendMentor, para melhorar meu HTML, C
 
 - [Stackoverflow](https://stackoverflow.com/) - Este site me ajudou muito na realização das funções do javascript.
 - [PerfectPixel](https://www.welldonecode.com/perfectpixel/) - Plugin do google Chrome utilizado para servir de refência na construção do layout, funciona mais ou menos como um FIGMA.
-- [DeveloperMozila]()
+- [DeveloperMozila](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Autor
 
