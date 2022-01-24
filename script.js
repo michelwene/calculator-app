@@ -10,19 +10,19 @@ button.map((button) => {
         display.innerText = "";
         break;
 
-      case "DEL":
-        if (display.innerText === "Digite um número") {
-          display.innerText = "";
-        } else if (display.innerText) {
-          display.innerText = display.innerText.slice(0, -1);
-        }
-        break;
-
       case "=":
         if (display.innerText === "") {
           display.innerText = "Digite um número";
         } else {
           display.innerText = eval(display.innerText);
+        }
+        break;
+        
+      case "DEL":
+        if (display.innerText === "Digite um número") {
+          display.innerText = "";
+        } else if (display.innerText) {
+          display.innerText = display.innerText.slice(0, -1);
         }
         break;
 
