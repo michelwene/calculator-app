@@ -1,0 +1,56 @@
+.buttonWrapper {
+  background-color: var(--bg-keypad);
+  padding: 5px 8px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: none;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+input[type="radio"]::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+  background: var(--toggle-key);
+}
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 0) {
+  .buttonWrapper{
+    padding: 3px 0px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .buttonWrapper{
+    padding: 5px 8px;
+  }
+}

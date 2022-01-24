@@ -1,0 +1,34 @@
+.switcher {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switcher span {
+  word-spacing: 13px;
+  text-align: center;
+  color: var(--color-result);
+  margin-left: 27px;
+}
+
+@media screen and (min-width: 0) {
+  .buttonSwitcher {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .switcher {
+    font-size: 13px;
+  }
+
+  .switcher span {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .switcher {
+    font-size: 16px;
+  }
+}
+

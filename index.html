@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=" theme1">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,50 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/calculator.css" />
+    <link rel="stylesheet" href="./assets/css/branding.css" />
+    <link rel="stylesheet" href="./assets/css/switcher.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/display.css" />
+    <link rel="stylesheet" href="./assets/css/button-Wrapper.css" />
     <script src="./script.js" defer></script>
     <title>Frontend Mentor | Calculator app</title>
   </head>
   <body class="app">
     <section class="calculator">
-        <nav>
-          <h1 class="branding">calc</h1>
-          <div id="themSwitcher" class="switcher">
-            <h2>
-              theme
-            </h2>
-            <div>
-              <span> 1 2 3</span>
-              <div class="buttonWrapper">
-                <input type='radio' name="them" id="them-1" class="them" value="them-1" />
-                <input type='radio' name="them" id="them-2" class="them" value="them-2" />
-                <input type='radio' name="them" id="them-3" class="them" value="them-3" />
-              </div>
+      <nav>
+        <h1 class="branding">calc</h1>
+        <div id="themSwitcher" class="switcher">
+          <h2>theme</h2>
+          <div class="buttonSwitcher">
+            <span>1 2 3</span>
+            <div class="buttonWrapper">
+              <input
+                type="radio"
+                name="them"
+                id="them-1"
+                class="them"
+                value="them-1"
+              />
+              <input
+                type="radio"
+                name="them"
+                id="them-2"
+                class="them"
+                value="them-2"
+              />
+              <input
+                type="radio"
+                name="them"
+                id="them-3"
+                class="them"
+                value="them-3"
+              />
             </div>
-        </nav>
-      <div id="display" ></div>
+          </div>
+        </div>
+      </nav>
+      <div id="display"></div>
       <div class="buttons">
         <button data-number class="num">7</button>
         <button data-number class="num">8</button>
