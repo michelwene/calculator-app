@@ -147,7 +147,7 @@ Os usuários devem ser capazes de:
   transform: translate(0px, 3px);
 }
 
-/*Este javascript diz respeito ao efeito de clique nos botões da calculadora, com este efeito, os botões ficaram muito mais realistas ao cliquei, ficou muito bom.
+/*Este css diz respeito ao efeito de clique nos botões da calculadora, com este efeito, os botões ficaram muito mais realistas ao cliquei, ficou muito bom.*/
 ```
 
 ```javaScript
