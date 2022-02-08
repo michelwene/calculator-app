@@ -42,8 +42,8 @@ const defaultThem = localStorage.getItem("them") || "them-1";
 
 setThem(defaultThem);
 themSwitcher.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    setThem(e.target.value);
+  button.addEventListener("click", (event) => {
+    setThem(event.target.value);
   });
 });
 
